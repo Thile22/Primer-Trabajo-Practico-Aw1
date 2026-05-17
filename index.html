@@ -1,8 +1,4 @@
 <!DOCTYPE html> <!--Indicamos al navegador que usamos HTML 5-->
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="es"> <!--Lenguaje español-->
     <head>
         <meta charset="utf-8">
@@ -10,18 +6,17 @@
         <title>THITEC</title> <!--Titulo que aparece en el navegador-->
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel="stylesheet" href="assets/css/styles.css">
+       <link rel="stylesheet" href="css/styles.css">
 </head>
    <body>
 
   <nav class="navbar">
   <h2 class="logo">THITEC</h2>
+  <ul id="menu" class="menu"></ul>
+    <button id="logoutBtn">
+    Cerrar sesión
+  </button>
 
-  <ul class="menu">
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#productos">Productos</a></li>
-    <a href="#registro">Registro</a></li>
-  </ul>
 </nav>
 
 <header id= "inicio" class="hero">
@@ -34,79 +29,23 @@
 
   <div class="contenedor-cards">
     <div class="card-producto">
-      <img src="assets/img/lenovo.jpg" alt="Notebook Lenovo">
+      <img src="img/lenovo.jpg" alt="Notebook Lenovo">
       <h3>Notebook Lenovo</h3>
       <p>Ideal para estudio y trabajo.</p>
       <span class="precio">$850.000</span>
       <button>Comprar</button>
     </div>
   </div>
+  </section>
 
-<section id= "registro" class="registro">
-  <h2>Registro de usuario</h2>
 
-  <form class="formulario">
-    <div class="campo">
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre">
-    </div>
-
-    <div class="campo">
-      <label for="apellido">Apellido</label>
-      <input type="text" id="apellido" name="apellido">
-    </div>
-
-    <div class="campo">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email">
-    </div>
-
-    <div class="campo">
-      <label for="password">Contraseña</label>
-      <input type="password" id="password" name="password">
-    </div>
-
-    <div class="campo">
-      <label for="fecha">Fecha</label>
-      <input type="date" id="fecha" name="fecha">
-    </div>
-
-    <button type="submit">Enviar</button>
-</form>
-
-  <section id = "productos" class="productos">
-    
-  <h2>Productos</h2>
-
-  <div class="contenedor-cards">
-
-    <div class="card-producto">
-       <img src="assets/img/mouse.jpg" alt="Mouse Gamer">
-      <h3>Mouse Gamer</h3>
-      <p>Alta precisión y RGB</p>
-      <span class="precio">$15.000</span>
-      <button>Comprar</button>
-    </div>
-
-    <div class="card-producto">
-       <img src="assets/img/teclado.jpg" alt="Teclado Mecánico">
-      <h3>Teclado Mecánico</h3>
-      <p>Switch Blue profesional</p>
-      <span class="precio">$35.000</span>
-      <button>Comprar</button>
-    </div>
-
-    <div class="card-producto">
-      <img src="assets/img/auriculares.webp" alt="Auriculares Gamer">
-      <h3>Auriculares Gamer</h3>
-      <p>Sonido envolvente</p>
-      <span class="precio">$25.000</span>
-      <button>Comprar</button>
-    </div>
-
-  </div>
+ <section id="productos" class="productos">
+   <h2>Todos los productos</h2>
+  <div id="contenedorProductos" class="contenedor-cards"></div>
 </section>
+  
 
+<script src="js/script.js"></script>
 </body>
             
 
