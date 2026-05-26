@@ -57,12 +57,15 @@ if (logoutBtn) {
 
 /* MOSTRAR PRODUCTOS */
 function mostrarProductos(listaProductos) {
+  const rutaImagen = paginaActual.includes("/pages/")
+    ? "../imagen/"
+    : "./imagen/";
   contenedorProductos.innerHTML = "";
 
   listaProductos.forEach(function(producto, index) {
     contenedorProductos.innerHTML += `
       <div class="card-producto">
-        <img src="${producto.imagen}" alt="${producto.titulo}">
+       <img src="${rutaImagen}${producto.imagen}" alt="${producto.titulo}">
 
         <h3>${producto.titulo}</h3>
 
@@ -189,7 +192,7 @@ if (contenedorCarrito) {
           ❌
         </button>
 
-        <img src="${producto.imagen}" alt="${producto.titulo}">
+       <img src="${rutaImagen}${producto.imagen}" alt="${producto.titulo}">
 
         <h3>${producto.titulo}</h3>
 
