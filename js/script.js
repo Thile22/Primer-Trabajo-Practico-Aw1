@@ -57,6 +57,11 @@ if (logoutBtn) {
 
 /* MOSTRAR PRODUCTOS */
 function mostrarProductos(listaProductos) {
+
+  const rutaJson = paginaActual.includes("/pages/")
+  ? "../data/productos.json"
+  : "./data/productos.json";
+  
   const rutaImagen = paginaActual.includes("/pages/")
     ? "../imagen/"
     : "./imagen/";
