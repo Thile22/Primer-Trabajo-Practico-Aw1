@@ -9,6 +9,10 @@ const rutaJson = paginaActual.includes("/pages/")
   ? "../data/productos.json"
   : "./data/productos.json";
 
+  const rutaImagen = paginaActual.includes("/pages/")
+  ? "../img/"
+  : "./img/";
+
 /* LOGIN */
 const loginForm = document.querySelector("#loginForm");
 
@@ -58,14 +62,9 @@ if (logoutBtn) {
 /* MOSTRAR PRODUCTOS */
 function mostrarProductos(listaProductos) {
 
-  const rutaJson = paginaActual.includes("/pages/")
-  ? "../data/productos.json"
-  : "./data/productos.json";
-  
-  const rutaImagen = paginaActual.includes("/pages/")
-    ? "../imagen/"
-    : "./imagen/";
-  contenedorProductos.innerHTML = "";
+  <img src="${rutaImagen}${producto.imagen}" alt="${producto.titulo}">
+    
+  </img>
 
   listaProductos.forEach(function(producto, index) {
     contenedorProductos.innerHTML += `
