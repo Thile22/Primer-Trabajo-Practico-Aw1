@@ -11,13 +11,30 @@
    <body>
 
   <nav class="navbar">
-  <h2 class="logo">THITEC</h2>
-  <ul id="menu" class="menu"></ul>
-    <button id="logoutBtn">
-    Cerrar sesión
-  </button>
+
+  <div class="logo">
+    <img src="img/logo.png" alt="Logo THITEC">
+  </div>
+
+  <ul class="menu">
+    <li><a href="index.html">Inicio</a></li>
+
+    <li class="dropdown">
+      <a href="#">Categorías</a>
+      <ul class="submenu">
+        <li><a href="pages/cat1.html">Netbooks</a></li>
+        <li><a href="pages/cat2.html">Tablets</a></li>
+        <li><a href="pages/cat3.html">Accesorios</a></li>
+      </ul>
+    </li>
+
+    <li><a href="pages/carrito.html">Carrito</a></li>
+  </ul>
+
+  <button id="logoutBtn">Cerrar sesión</button>
 
 </nav>
+
 
 <header id= "inicio" class="hero">
   <h1>THITEC</h1>
@@ -41,9 +58,23 @@
 
  <section id="productos" class="productos">
    <h2>Todos los productos</h2>
+
+    <input 
+    type="text" 
+    id="buscador" 
+    placeholder="Buscar productos..."
+    class="buscador-productos"
+    >
   <div id="contenedorProductos" class="contenedor-cards"></div>
 </section>
   
+<footer class="footer">
+  <h3>THITEC</h3>
+
+  <p>Tu tienda tecnológica de confianza</p>
+
+  <p>© 2026 THITEC - Todos los derechos reservados</p>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
