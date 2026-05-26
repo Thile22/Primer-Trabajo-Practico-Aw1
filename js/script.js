@@ -9,9 +9,7 @@ const rutaJson = paginaActual.includes("/pages/")
   ? "../data/productos.json"
   : "./data/productos.json";
 
-  const rutaImagen = paginaActual.includes("/pages/")
-  ? "../img/"
-  : "./img/";
+  const base = paginaActual.includes("/pages/") ? "../" : "./";
 
 /* LOGIN */
 const loginForm = document.querySelector("#loginForm");
@@ -62,14 +60,14 @@ if (logoutBtn) {
 /* MOSTRAR PRODUCTOS */
 function mostrarProductos(listaProductos) {
 
-  <img src="${rutaImagen}${producto.imagen}" alt="${producto.titulo}">
-    
-  </img>
+  contenedorProductos.innerHTML = "";
 
   listaProductos.forEach(function(producto, index) {
+
     contenedorProductos.innerHTML += `
       <div class="card-producto">
-       <img src="${rutaImagen}${producto.imagen}" alt="${producto.titulo}">
+
+        <img src="${base}${producto.imagen}" alt="${producto.titulo}">
 
         <h3>${producto.titulo}</h3>
 
@@ -79,13 +77,16 @@ function mostrarProductos(listaProductos) {
 
         <div class="cantidad">
           <button class="btn-restar" data-index="${index}">-</button>
+
           <span id="cantidad-${index}">0</span>
+
           <button class="btn-sumar" data-index="${index}">+</button>
         </div>
 
         <button class="btn-agregar" data-index="${index}">
           Añadir al carrito
         </button>
+
       </div>
     `;
   });
@@ -196,7 +197,7 @@ if (contenedorCarrito) {
           ❌
         </button>
 
-       <img src="${rutaImagen}${producto.imagen}" alt="${producto.titulo}">
+      <img src="${base}${producto.imagen}" alt="${producto.titulo}">
 
         <h3>${producto.titulo}</h3>
 

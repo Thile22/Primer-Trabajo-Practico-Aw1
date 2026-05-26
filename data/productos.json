@@ -3,70 +3,70 @@
     "titulo": "Notebook Lenovo",
     "descripcion": "Ideal para estudio y trabajo",
     "precio": 850000,
-    "imagen": "lenovo.jpg",
+    "imagen": "img/lenovo.jpg",
     "categoria": "netbooks"
   },
   {
     "titulo": "Tablet Samsung",
     "descripcion": "Pantalla amplia y excelente rendimiento",
     "precio": 450000,
-    "imagen": "tableta9.jpg",
+    "imagen": "img/tableta9.jpg",
     "categoria": "tablets"
   },
   {
     "titulo": "Mouse Gamer",
     "descripcion": "Alta precisión y RGB",
     "precio": 15000,
-    "imagen": "mouse.jpg",
+    "imagen": "img/mouse.jpg",
     "categoria": "Accesorios"
   },
   {
     "titulo": "Teclado Mecánico",
     "descripcion": "Switch Blue profesional",
     "precio": 35000,
-    "imagen": "teclado.jpg",
+    "imagen": "img/teclado.jpg",
     "categoria": "Accesorios"
   },
   {
     "titulo": "Auriculares Gamer",
     "descripcion": "Sonido envolvente",
     "precio": 25000,
-    "imagen": "auriculares.webp",
+    "imagen": "img/auriculares.webp",
     "categoria": "Accesorios"
   },
   {
     "titulo": "Netbook Asus",
     "descripcion": "Ideal para estudio y trabajo",
     "precio": 125000,
-    "imagen": "asus.jpg",
+    "imagen": "img/asus.jpg",
     "categoria": "netbooks"
   },
   {
     "titulo": "Netbook HP",
     "descripcion": "Ideal para estudio y trabajo",
     "precio": 105000,
-    "imagen": "hp.jpg",
+    "imagen": "img/hp.jpg",
     "categoria": "netbooks"
   },
   {
     "titulo": "Netbook Samsung",
     "descripcion": "Ideal para estudio y trabajo",
     "precio": 205000,
-    "imagen": "samsung.jpg",
+    "imagen": "img/samsung.jpg",
     "categoria": "netbooks"
   },
   {
     "titulo": "Tablet Lenovo",
     "descripcion": "Pantalla amplia y excelente rendimiento",
     "precio": 850000,
-    "imagen": "tabletlenovo.png",
+    "imagen": "img/tabletlenovo.png",
     "categoria": "tablets"
   },
   {
     "titulo": "Tablet Redmi",
     "descripcion": "Pantalla amplia y excelente rendimiento",
     "precio": 650000,
-    "imagen": "redmi.jpg",
+    "imagen": "img/redmi.jpg",
     "categoria": "tablets"
   }
 ]
