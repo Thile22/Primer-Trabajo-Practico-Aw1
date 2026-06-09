@@ -17,7 +17,6 @@ const loginForm = document.querySelector("#loginForm");
 if (loginForm) {
   loginForm.addEventListener("submit", function(event) {
     event.preventDefault();
-
     sessionStorage.setItem("logueado", "true");
     window.location.href = "./index.html";
   });
@@ -132,7 +131,7 @@ function activarBotones(listaProductos) {
         }
 
         localStorage.setItem("carrito", JSON.stringify(carrito));
-
+        actualizarContadorCarrito();
         alert("Producto agregado al carrito");
 
         cantidad.textContent = 0;
@@ -229,8 +228,25 @@ if (contenedorCarrito) {
       carritoLimpio.splice(index, 1);
 
       localStorage.setItem("carrito", JSON.stringify(carritoLimpio));
+      actualizarContadorCarrito();
 
       location.reload();
     });
   });
+
 }
+function actualizarContadorCarrito() {
+
+  const linkCarrito = document.querySelector("#linkCarrito");
+
+  if (!linkCarrito) return;
+
+  const carritoGuardado =
+    JSON.parse(localStorage.getItem("carrito")) || [];
+
+  linkCarrito.textContent =
+    `🛒 Carrito (${carritoGuardado.length})`;
+
+}
+
+actualizarContadorCarrito();
